@@ -1,0 +1,37 @@
+@reference 'tailwindcss';
+@reference '../../../styles/shadcn-tailwind.css';
+
+@layer components {
+
+    /* header */
+    .navbar {
+        @apply w-[160rem] bg-background sticky top-0 z-50;
+        @apply print:hidden;
+    }
+
+    .menu {
+        @apply mx-auto flex max-w-7xl items-center justify-between gap-8 px-4 py-8 sm:px-6;
+    }
+
+    .navbar-items {
+        @apply text-muted-foreground flex flex-6 items-center justify-around gap-8 font-medium md:justify-center lg:gap-16;
+    }
+
+    /* div */
+    .hero {
+        @apply flex flex-1 gap-x-6 max-w-[35rem] bg-transparent items-start;
+        @apply self-center;
+
+        /* a */
+        .logo {
+            @apply rounded-[50%] bg-linear-90 from-pink from-0% to-purple to-100%;
+            @apply text-darkest cursor-pointer no-underline;
+            @apply animate-rotate;
+        }
+
+        /* span */
+        .developer {
+            @apply flex-2 self-start;
+        }
+    }
+}

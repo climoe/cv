@@ -1,0 +1,54 @@
+@reference 'tailwindcss';
+@reference '../../styles/tailwind.css';
+
+/* SECTION COMPONENT*/
+@layer components {
+
+    /* section */
+    .animated {
+        @apply m-0;
+        @apply lg:m-[0_0_8px];
+        @apply print:m-0;
+
+        .controls {
+            @apply flex flex-row items-start justify-around;
+            @apply lg:flex-col;
+        }
+    }
+
+    /* section */
+    .carrier {
+        @apply bg-[url('../public/images/splash2.svg')] bg-contain bg-top-right bg-no-repeat;
+        @apply m-[12px_8px_4px];
+        @apply print:bg-white;
+    }
+
+    /* section */
+    .intro {
+        @apply p-[10rem_0] m-[0_auto];
+        @apply bg-[url('../public/images/splash.svg')] bg-contain bg-top-right bg-no-repeat;
+        @apply print:bg-white;
+
+        h1 {
+            @apply text-[4.8rem] text-darkest font-medium text-left;
+        }
+
+        p {
+            @apply text-[1.2rem] text-darkest font-light text-left p-[0.3rem];
+        }
+    }
+
+    /* section */
+    .vite {
+        @apply w-[150rem] flex-[1_0_50%] flex-col m-[0_4rem] mt-[4rem] p-[2rem];
+        @apply bg-white  backdrop-blur-xs rounded-[.8rem];
+        @apply lg:mt-[2rem] lg:flex-[1_1_100%];
+        @apply print:w-[70rem] print:mt-0 print:p-0;
+        @apply hover:bg-white;
+    }
+
+    /* h1 */
+    .vite-title {
+        @apply mt-[1rem] leading-[1.2] mb-[1rem] text-m font-medium break-inside-avoid;
+    }
+}

@@ -1,0 +1,132 @@
+@reference 'tailwindcss';
+@reference '../../styles/tailwind.css';
+
+/* IDENTITY COMPONENT */
+/* section */
+
+@layer components {
+
+    /* div */
+    .identity {
+        @apply w-[100rem] m-[5rem_auto_0rem];
+        @apply flex flex-row flex-2 gap-x-60;
+        @apply print:m-[0] print:p-[0] print:w-[60rem];
+    }
+
+    /* section */
+    .identity-info {
+        @apply w-[34rem];
+        @apply flex flex-col flex-1 gap-y-[.25rem] items-start justify-start;
+        @apply mb-[8rem];
+        @apply print:w-[17rem] print:ml-[12rem];
+
+        /* h2 */
+        .identity-name {
+            @apply w-[34rem] mb-[2rem] text-[2.5rem] text-darkest font-black text-center;
+            @apply self-center;
+            @apply print:w-[25rem] print:ml-[6rem] print:text-darkest;
+
+            span {
+                @apply inline-block font-light;
+            }
+        }
+
+        /* section */
+        .identity-personal {
+            @apply w-[34rem] gap-y-[2rem];
+            @apply flex flex-col items-center justify-between self-center;
+            @apply print:w-[17rem];
+        }
+    }
+
+    /* div */
+    .identity-avatar {
+        @apply inline-block relative justify-self-center;
+        @apply print:ml-[5rem];
+    }
+
+    /* div */
+    .identity-avatar-container {
+        @apply absolute top-0 right-0 bottom-0 left-0 w-[12rem] rounded-[50%] bg-linear-90 from-[#FF33CCFF] from-0% to-[#6C63FF] to-100% z-[-1] translate-x-1/10;
+    }
+
+    /* div */
+    .identity-location {
+        @apply inline-flex flex-row gap-y-0 gap-x-0 w-auto;
+        @apply print:ml-[6rem];
+
+        /* span */
+        .identity-pin {
+            @apply h-[4rem] self-end bg-darkest;
+            @apply inline;
+            @apply print:bg-darkest;
+
+            svg {
+                @apply fill-[#6c63ff];
+            }
+        }
+
+        /* span */
+        .identity-city {
+            @apply text-[2rem] w-[17.5rem] justify-center self-center;
+            @apply text-white font-medium p-[0.5rem_1.25rem_0.5rem_0.5rem];
+            @apply bg-darkest mt-[1.25rem];
+            @apply print:bg-darkest print:mt-[1.25rem];
+        }
+
+    }
+
+    /* section */
+    .identity-contact {
+        @apply text-2xl leading-[3];
+        @apply flex flex-col flex-1 gap-8 self-start justify-center items-center;
+
+        h2 {
+            @apply font-black self-center;
+        }
+
+        h3 {
+            @apply mt-4 ml-4 font-light;
+        }
+    }
+
+
+    /* p */
+    .identity-medium {
+        @apply text-2xl;
+        @apply self-center inline-flex;
+
+        /* span */
+        .identity-contact-icon {
+            @apply inline-flex;
+
+            svg {
+                @apply fill-[#6c63ff];
+            }
+        }
+    }
+
+    /* section */
+    .identity-accessibility {
+        @apply flex flex-row items-center justify-between self-center text-center;
+
+        svg {
+            @apply fill-[#6c63ff];
+        }
+    }
+
+    /* div */
+    .identity-about {
+        @apply text-2xl pl-[1.5rem];
+        @apply flex flex-col content-start justify-center;
+
+        h2 {
+            @apply text-4xl text-center;
+            @apply font-black mt-4 mb-8;
+        }
+
+        h3 {
+            @apply m-[2rem_4rem_4rem_4rem] indent-10 font-light;
+        }
+    }
+}

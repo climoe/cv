@@ -1,0 +1,75 @@
+@reference 'tailwindcss';
+@reference '../../styles/tailwind.css';
+
+/* SHARED COMPONENTS */
+
+@layer components {
+    .analyze {
+        @apply flex-[1_1_50%] min-h-[25rem] self-center mb-[2rem];
+        @apply lg:flex-[1_0_50%] lg:min-h-[35rem] min-w-[55rem];
+        @apply md:flex-[1_0_50%] md:min-h-[30rem] md:min-w-[50rem];
+        @apply sm:hidden;
+
+        @media  print {
+            @apply hidden;
+        }
+
+    }
+
+
+    .consult {
+        @apply flex-[1_1_50%] min-h-[25rem] self-center mb-[2.5rem];
+        @apply lg:flex-[1_1_50%] min-h-[35rem] min-w-[55rem];
+        @apply md:flex-[1_0_50%] md:min-h-[30rem] md:min-w-[50rem];
+        @apply sm:hidden;
+        @media  print {
+            @apply hidden;
+        }
+
+    }
+
+    .dev {
+        @apply flex min-h-[25rem] self-center pt-[1rem];
+        @apply lg:flex-[2_0_50%] lg:min-h-[35rem] lg:min-w-[55rem];
+        @apply md:flex-[1_0_50%] md:min-h-[30rem] md:min-w-[50rem];
+        @apply sm:hidden;
+
+
+    }
+
+    .main-title {
+
+        @apply flex-[1_1_50%] mt-8 text-3xl overflow-hidden text-darkest font-medium;
+        @apply print:hidden;
+
+        .span {
+            @apply text-3xl font-medium bg-linear-90 from-pink from-0%  to-purple-darker to-100%;
+        }
+    }
+
+    .preloader {
+        @apply fixed top-0 left-0 w-screen h-screen z-999;
+        @apply flex justify-center items-center content-center;
+
+        div {
+            @apply w-[50rem] h-[25rem];
+        }
+    }
+
+    .title-question {
+        @apply flex items-start justify-start text-m;
+        @apply print:hidden;
+
+        h1 {
+            @apply relative overflow-hidden w-[15rem] font-thin text-darkest;
+        }
+
+        .message {
+            @apply block pl-[.5rem] overflow-hidden absolute mt-0 m-[10.5rem] font-black text-darkest bg-linear-90 from-orange from-0% to-pink to-100%;
+            @apply animate-[openclose_5s_ease-in-out_infinite];
+        }
+
+        .word {
+        }
+    }
+}
