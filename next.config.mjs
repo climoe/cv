@@ -1,9 +1,12 @@
-import type { NextConfig } from "next";
+// @ts-check
+
+/** @type {import('next').NextConfig} */
 
 import path from 'path';
 
 
-const nextConfig: NextConfig = {
+
+const nextConfig = {
     pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
     experimental: {
         useTypeScriptCli: true,
@@ -18,12 +21,6 @@ const nextConfig: NextConfig = {
         },
         root: path.join(__dirname, '..'),
     },
-    output: 'export',
-    images: {
-        unoptimized: true
-    },
-    basePath: '/resume',
-    assetPrefix: '/resume/',
 };
 
 export default nextConfig;
