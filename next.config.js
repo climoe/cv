@@ -17,7 +17,7 @@ const nextConfig = {
                 as: '*.js',
             },
         },
-        root: path.join(__dirname, '..'),
+        root: path.join(import.meta.dirname, '..'),
     },
 };
 
