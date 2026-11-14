@@ -41,6 +41,7 @@
     "next": "16.4.2",
     "radix-ui": "^1.6.7",
     "react": "19.2.8",
+
     "react-dom": "19.2.8",
     "react-intersection-observer": "^11.0.0",
     "react-to-print": "^3.3.0",

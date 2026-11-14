@@ -31,12 +31,11 @@ export default function Experience({
 								{exp.time.from} - {exp.time.to}
 							</time>
 							<span className='company'>
-								<strong>{exp.company}</strong>
+								<strong>{exp.position}</strong>
 								{exp.projects.map((p, index) => {
 									return (
 										<Project
 											name={p.name}
-											position={p.position}
 											details={p.description}
 											role={p.role}
 											technologies={p.technology}

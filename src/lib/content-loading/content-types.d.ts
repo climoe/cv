@@ -51,19 +51,18 @@ type ExperienceTechnologyProps = {
 type ExperienceProjectProps = {
   name: string,
   description: string,
-  position: string,
   role: string
   technology: ExperienceTechnologyProps []
 }
 
 type ExperienceProps = {
-  time: {
-    from: string,
-    to: string,
-  }
-  company: string,
-  projects: ExperienceProjectProps[]
-}
+	time: {
+		from: string;
+		to: string
+	};
+	position: string;
+	projects: ExperienceProjectProps[];
+};
 
 export type ExperienceListProps = {
   id: string,
