@@ -12,9 +12,9 @@
           "position": "Senior Fullstack Developer (Grid Dynamics) (client: VISA)",
           "projects": [
             {
-              "name": "Authorization disputes resolution system",
-              "description": "A project for the world's largest payment card service provider, involving an advanced decision-support multi-agentic system in terms of authorization disputes in money transaction",
-              "role": "1/4 developers fullstack  | Analysis and solution design for agentic project | Solution development, cooperating with QA team and colleagues in different locations | Evaluating and adopting new development tools, libraries | Performing code reviews | Using Agentic AI workflow to daily-basis code-generation",
+              "name": "System rozstrzygania sporów dotyczących autoryzacji",
+              "description": "Projekt dla największego na świecie dostawcy usług w zakresie kart płatniczych, obejmujący zaawansowany wieloagentowy system wspierania decyzji dotyczących sporów związanych z autoryzacją transakcji finansowych.",
+              "role": "1/4 fullstack developerów  | Analiza i projektowanie rozwiązań dla projektu opartego na agentach | Opracowywanie rozwiązań, współpraca z zespołem QA oraz współpracownikami w różnych lokalizacjach | Ocena i wdrażanie nowych narzędzi programistycznych oraz bibliotek | Przegląd kodu | Wykorzystanie narzędzi Agentic AI do codziennego generowania kodu",
               "technology": [
                 { "name": "Java 21" },
                 { "name": "Claude Code"},
@@ -40,9 +40,9 @@
           "position": "Senior Kotlin Developer (Avenga) (client: Allegro)",
           "projects": [
             {
-              "name": "Advertisement platform",
-              "description": "Project for the biggest polish e-commerce platfrom whose goal was to became independent in terms of advertising ( from Meta and Google)",
-              "role": "1/3 backend developer  | Analysis and design of solution | Code reviewing  | Close to business cooperation with new possible outcomes | Mentoring less experienced colleagues",
+              "name": "Platforma do zarządzania reklamami",
+              "description": "Projekt dla największej polskiej platformy e-commerce, którego celem było uzyskanie niezależności w obszarze reklamy (od serwisów Meta i Google).",
+              "role": "1/3 backend developerów  | Analiza i projektowanie rozwiązania | Przegląd kodu | Bliska współpraca biznesowa z nowymi, potencjalnymi rezultatami | Mentoring mniej doświadczonych współpracowników",
               "technology": [
                 { "name": "Java 17/21" },
                 { "name": "Kotlin 2.0" },
@@ -66,7 +66,8 @@
           "position": "Senior Kotlin/Java Developer (Intive) (client: DHL)",
           "projects": [
             {
-              "name": "Aplikacja wspierająca rozwiazania logistyczne na terminala przeładunkowych",
+              "name": "Aplikacja wspierająca rozwiazania logistyczne na terminalach  przeładunkowych",
+
               "description": "Projekt dla największego  niemieckiego przewoźnika logistycznego. Wspracie i rozwój potrzeb klienta w zakresie obsługi przeładunków terminalowych przesyłek logistycznych w transporcie lądowym. Optymalizacja wyboru tras i załadunku w celu zmniejszenia kosztów i najlepszej obsługi klientów przewoźnika.",
               "role": "1/4 deweloperów backend  | Optymalizacja procesu konteneryzacji  - refactoring i wydajność | Przegląd kodu  | Development nowych wymagań aplikacji Spring Boot 3  w Kotlinie|",
               "technology": [
@@ -102,12 +103,7 @@
                 { "name": "Spring Boot 3" },
                 { "name": "Clean Architecture/CQRS" },
                 { "name": "DDD" },
-                { "name": "Docker" },
-                { "name": "Kubernetes" },
-                { "name": "Spock/JUnit" },
-                { "name": "Angular 15" },
-                { "name": "Microservices" },
-                { "name": "AWS (ECS, EKS, RDS, S3, SQS, SNS, Lambda)" }
+                { "name": "Docker" }
               ]
             }
           ]

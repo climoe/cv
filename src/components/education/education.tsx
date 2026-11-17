@@ -21,15 +21,15 @@ export default function Education({
 	return (
 		<ViteSection id='education' title={title}>
 			<ul>
-				{events.map((ev, index) => {
+				{events.map((event, index) => {
 					return (
 						<motion.li whileTap={{ scale: 0.95 }} key={index}>
 							<time>
-								{ev.time.from} - {ev.time.to}
+								{event.time.from} - {event.time.to}
 							</time>
 							<span>
-								<strong>{ev.title}</strong>
-								{ev.description}
+								<strong>{event.title}</strong>
+								{event.description}
 							</span>
 						</motion.li>
 					);
