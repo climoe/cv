@@ -22,22 +22,17 @@ export function CVLayout({ children }: {children: React.ReactNode}): React.React
 	const PURPLE = useCssVar('PURPLE');
 	const componentRef = useRef<HTMLElement>(null);
 	const [companyName, setCompanyName] = useState<string>('');
-	const pageStyle = `
-      @media print {
-      	html {
-      		font-size: 50%;
-      	}
-      }
-      
+	const pageStyle = `      
       @page {
         size: A4;
         margin: .5in 0 .5in !important;
       }
 
-      @page:first{
+      @page:first {
         margin-top: 0;
       } 
-`;
+	`;
+
 	const useHandlePrint = () =>
 		useReactToPrint({
 			contentRef: componentRef,
@@ -68,7 +63,7 @@ export function CVLayout({ children }: {children: React.ReactNode}): React.React
 								<Switch sticky={true}/>
 							</section>
 							{children}
-							<section className={'flex content-center justify-center m-[1.5rem_0.5rem] text-[1.5rem] italic text-center text-grey'}>
+							<section className={'flex content-center justify-center m-[1.5rem_1.5rem] text-[1.5rem] italic text-center text-grey'}>
 								<span>
 									I consent to the processing by {companyName} my personal data
 									included in my CV for the purposes of the recruitment
