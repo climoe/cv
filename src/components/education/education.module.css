@@ -6,7 +6,8 @@
 /* EDUCATION COMPONENT */
 @layer components {
     section#education {
-        @apply break-after-page;
+        @apply mt-12 break-after-page;
+
 
         & > ul {
             @apply text-[1.6rem] w-full list-none pl-0;
